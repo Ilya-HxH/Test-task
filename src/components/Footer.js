@@ -3,10 +3,10 @@ import React from 'react';
 const Footer = () => {
   return (
     <>
-      {/* Основной черный футер */}
+      
       <footer className="bg-black text-white py-8 rounded-lg mx-auto my-2 px-8" style={{ maxWidth: '1480px' }}>
         <div className="flex justify-between">
-          {/* Логотип и текстовое описание */}
+          
           <div className="w-1/3">
             <div className="text-2xl font-bold mb-4">
               <span className="border-l border-r border-white px-2">SPOT</span>
@@ -16,9 +16,9 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Контактная информация и Соц.сети */}
+          
           <div className="w-1/3 flex justify-between">
-            {/* Email и номер */}
+            
             <div className="space-y-4">
               <h4 className="font-semibold">Email</h4>
               <p>spot.shop@gmail.com</p>
@@ -26,7 +26,7 @@ const Footer = () => {
               <p>+7 (555) 123-4567</p>
             </div>
 
-            {/* Соц.сети */}
+            
             <div className="space-y-4">
               <h4 className="font-semibold">Соц.сети</h4>
               <ul>
@@ -39,7 +39,7 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* Копирайт и ссылки, вынесенные за черный футер */}
+      
       <div className="flex justify-between text-gray-400 text-sm mt-[-20px] px-8 pb-4" style={{ maxWidth: '1480px', margin: '0 auto' }}>
         <p>© Copyright 2024 Spot. Все права защищены.</p>
         <div className="flex space-x-6">
