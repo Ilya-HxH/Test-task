@@ -9,7 +9,7 @@ const AboutUs = () => {
         
         
         <div className="grid grid-cols-2 gap-8 bg-gray-100 p-8 rounded-lg shadow-lg">
-          {/* Левый текстовый блок */}
+          
           <div className="flex flex-col justify-center">
             <h2 className="text-4xl font-bold mb-4">О Нас: Вдохновение и Инновации в Каждой Детали</h2>
             <p className="text-lg text-gray-700">
@@ -20,7 +20,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          {/* Правое изображение */}
+          
           <div className="flex justify-center items-center">
             <img src={logo1} alt="Fidelity Card Business" className="rounded-3xl shadow-lg w-11/12 h-auto" />
           </div>
@@ -28,12 +28,12 @@ const AboutUs = () => {
 
         
         <div className="grid grid-cols-2 gap-8 bg-gray-100 p-8 rounded-lg shadow-lg">
-          {/* Левое изображение */}
+          
           <div className="flex justify-center items-center ">
             <img src={logo2} alt="Luxury Fashion" className="rounded-3xl shadow-lg w-11/12 h-auto" />
           </div>
 
-          {/* Правый текстовый блок */}
+          
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl font-bold mb-4">Lorem ipsum dolor sit amet consectetur Euismod</h2>
             <p className="text-lg text-gray-700">

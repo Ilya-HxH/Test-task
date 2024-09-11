@@ -30,7 +30,7 @@ const MinimalistLogos = ({ onLogoClick }) => {
             <div 
               key={logo.id} 
               className="bg-gray-100 p-12 rounded-lg relative cursor-pointer" 
-              onClick={() => onLogoClick(logo)} // Обрабатываем клик для показа деталей логотипа
+              onClick={() => onLogoClick(logo)}
             >
               
               <div className="absolute top-4 left-4 text-gray-700 font-semibold">{logo.name}</div>

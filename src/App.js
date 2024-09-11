@@ -9,41 +9,39 @@ import AboutSection from './components/AboutSection';
 import LogoDetails from './components/LogoDetails';
 
 function App() {
-  const [showAbout, setShowAbout] = useState(false); // Состояние для отображения "О нас"
-  const [selectedLogo, setSelectedLogo] = useState(null); // Состояние для отображения деталей логотипа
+  const [showAbout, setShowAbout] = useState(false);
+  const [selectedLogo, setSelectedLogo] = useState(null);
 
-  // Функция для показа секции "О нас"
+
   const handleShowAbout = () => {
     setShowAbout(true);
-    setSelectedLogo(null); // Скрываем лого детали, если открываем "О нас"
+    setSelectedLogo(null);
   };
 
-  // Функция для возвращения к домашней странице
+
   const handleShowHome = () => {
     setShowAbout(false);
-    setSelectedLogo(null); // Скрываем лого детали при возврате на главную
+    setSelectedLogo(null);
   };
 
-  // Функция для показа деталей логотипа
+
   const handleShowLogoDetails = (logo) => {
-    setSelectedLogo(logo); // Устанавливаем выбранный логотип
-    setShowAbout(false); // Скрываем "О нас", если показываем детали логотипа
+    setSelectedLogo(logo);
+    setShowAbout(false);
   };
 
   return (
     <div>
-      {/* Передаем функции handleShowAbout и handleShowHome в Header */}
       <Header onShowAbout={handleShowAbout} onShowHome={handleShowHome} />
 
-      {/* Если выбраны детали логотипа, отображаем их */}
       {selectedLogo ? (
-        <LogoDetails logo={selectedLogo} /> // Отображаем компонент с деталями логотипа
+        <LogoDetails logo={selectedLogo} />
       ) : showAbout ? (
-        <AboutSection /> // Отображаем секцию "О нас"
+        <AboutSection />
       ) : (
         <>
           <HeroSection />
-          <MinimalistLogos onLogoClick={handleShowLogoDetails} /> {/* Передаем функцию клика на логотип */}
+          <MinimalistLogos onLogoClick={handleShowLogoDetails} />
           <AboutUs />
           <AbstractLogos />
         </>
